@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    --backgroud: black;
+    --fontSecond: black;
+    --fontFirst: white;
+}
+body{
+    font-family: 'Darker Grotesque', sans-serif;
+    background-color: var(--backgroud);
+    color: var(--fontFirst);
+    font-weight: 400;
+}
+li{
+    list-style: none;
+} 
+h1{
+    font-size: 2.5rem;
+}
+a{
+    color: var(--fontFirst);
+    text-decoration: none;
+    font-size: 2rem;
+}
+a:hover{
+    font-weight: bold;
+}
+.container{
+    display: flex;
+}
+.navbar{
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+}
+.icons{
+    font-size: 1.5rem;
+}
+.galeria{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assents/background.png);
+    background-size: cover;
+    color: var(--fontSecond)
+}
+h2{
+    font-size: 3rem;
+}
+.galery-title{
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+    
+.btn-more{
+    color: var(--fontSecond);
+    font-weight: bold;
+}
+.gallery-description{
+    width: 40%;
+    font-size: 2rem;
+    text-align: center;
+}
+.photo-galeria{
+   text-align: center;
+}
+.photo-gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.gallery-item{
+    flex: 1 0 calc(33% - 5px);
+    height: 350px;
+    max-width: calc(53% - 5px);
+    overflow: hidden;
+}
+.gallery-item img{
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+}
+.gallery-item:hover img{
+    transform: scale(1.09);
+}
+.btn-load{
+    background-color: grey;
+    padding: 10px 20px;
+    margin: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
